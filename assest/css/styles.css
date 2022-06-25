@@ -1,0 +1,312 @@
+/*generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700&family=Roboto:ital,wght@1,100&family=Rubik:wght@700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 4em 0;
+}
+
+body {
+    background-color: #F8F5F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+.logo {
+    font-family: 'Rubik', sans-serif;
+    color: #FF5B7C;
+    font-weight: 900;
+}
+
+h1 span,
+h2 span,
+.logo span{
+    color: #554444;
+}
+h1{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 47px;
+
+}
+
+h2{
+    padding:23px;
+    margin: 0;
+    text-align: center;
+}
+header {
+    background-color: #F8F5F4;
+}
+
+p span{
+    font-weight: 500;
+}
+
+/*botones*/
+.btn {
+    margin-right: 1em;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    min-width: 198px;
+}
+
+
+
+.boton-relleno {
+    background-color: #9B33BD;
+    color: #EADBF1;
+}
+
+.boton-outline {
+    border: 2px solid #9B33BD;
+    color: #9B33BD;
+}
+
+.logo span {
+    color: #9B33BD;
+}
+
+
+.separador {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    
+}
+
+.flex-wrap-justify {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.center {
+    text-align: center;
+}
+
+.w-40 {
+    width: 45%;
+}
+
+/*Carrusel*/
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+}
+
+/*CARDS*/
+.card {
+    background-color: #FDF5EF;
+    text-align: center;
+    border: none;
+    border-radius: 1.25rem;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.card ul{
+    text-align: start;
+}
+.card h4 {
+    padding: 1em 0 0.5em 0;
+    color: #89CBC0;
+}
+
+.card h4 span {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.funcion .card, .beneficios .card {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.tachado {
+    text-decoration-line: line-through;
+
+    color: rgba(85, 68, 68, 0.6);
+}
+
+/*fondo
+.incio,
+.porque {
+    background-color: #89CBC0;
+    color: #FDF5EF;
+}*/
+
+.inicio ul {
+    list-style-image: url('../img/lista.png');
+    list-style-position: outside;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fondo-amarillo {
+    background-image: url(../img/fondo-amarillo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo-amarillo-chico {
+    background-image: url(../img/chico-amarillo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/*--------MOBILE---------*/
+
+/*PORTADA*/
+.portada,
+footer {
+    background-image: url(..//img/fondo-violta-nuevo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+}
+
+.portada {
+    background-position: bottom;
+    height: 100vh;
+}
+
+footer {
+    background-position: top;
+}
+
+.portada h2 {
+    text-transform: none;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+
+.portada-texto {
+    padding: 2em;
+}
+
+/*INICIO*/
+.incio>div {
+    align-items: center;
+    padding: 2em 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.funcion .card img {
+    width: 153px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*galeria*/
+
+/*TESTIMONIOS*/
+/*CARRUSEL*/
+.testimonios .carousel {
+    height: 90vh;
+}
+
+.testimonios-cards {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    height: 70vh;
+}
+
+.texto-testimonio span {
+    color: #acaaa8;
+}
+
+.bi-star-fill {
+    color: #F7A940
+}
+
+.testimonio-carrusel {
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+
+/*form*/
+
+.form-control {
+    margin-top: 1em;
+}
+
+form .btn {
+    margin-top: 1em;
+}
+
+
+
+/*///////*/
+
+.iconos-pago{
+    width: 80px;
+}
+
+
+@media screen and (min-width:920px) {
+
+    .testimonios-cards {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .texto-testimonio {
+        margin-left: 1em;
+        width: 50%;
+    }
+
+    .portada {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .img-portada {
+        width: 50%;
+    }
+
+    .portada-texto {
+        width: 50%;
+    }
+
+    .portada-texto {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .testimonios .carousel {
+        height: 70vh;
+    }
+    .testimonio-carrusel {
+        width: 70%;
+    }
+
+}
